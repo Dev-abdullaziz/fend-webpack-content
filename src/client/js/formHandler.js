@@ -6,10 +6,11 @@ function handleSubmit(event) {
     Client.checkForName(formText)
 
     console.log("::: Form Submitted :::")
-    fetch('http://localhost:8081/test')
+    let v = Math.floor(Math.random()*100);
+    fetch(`https://jsonplaceholder.typicode.com/todos/${v}`)
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('results').innerHTML = res.message
+        document.getElementById('results').innerHTML = res.title
     })
 }
 
