@@ -25,11 +25,8 @@ app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 })
 
-let textapi = {
-    application_key: process.env.API_Key
-}
-
 app.get('/key',function (req,res) {
-    res.send(textapi.application_key)
+    res.send(process.env.API_Key)
 })
+
 

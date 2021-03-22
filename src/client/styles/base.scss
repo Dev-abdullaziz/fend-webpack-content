@@ -13,13 +13,11 @@ main {
     justify-content: center;
     text-align: center;
     flex: 2;
-    // border: solid 1px red;
 }
 
 section {
     // max-width: 800px;
     margin: 50px auto;
-    // border: solid 1px red !important;
 
     input[type="submit"] {
         background-color: aquamarine;
@@ -36,5 +34,14 @@ section:nth-child(2) {
     width: 100%;
     padding: 2% 5%;
     text-align: left;
+
+    strong {
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    #results {
+        padding: 1%;
+    }
 }
 
