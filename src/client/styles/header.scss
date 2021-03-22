@@ -1,14 +1,14 @@
 header {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: space-between !important;
     padding: 10px 40px;
     width: 100%;
     height: 100px;
+    padding: 2% 5% !important;
 
 
-    // div {
-    //     display: inline-block;
-    //     border: solid 1px red;
+    div {
+        display: inline-block;
 
-    // }
+    }
 }

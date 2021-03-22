@@ -6,6 +6,6 @@ import './styles/form.scss'
 import './styles/header.scss'
 import './styles/resets.scss'
 
-console.log(checkForName);
+// console.log(checkForName);
 
 export {checkForName , handleSubmit};

@@ -1,8 +1,12 @@
+const dotenv = require("dotenv")
+dotenv.config();
 var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
+const cors = require("cors")
 
 const app = express()
+app.use(cors())
 
 app.use(express.static('dist'))
 
@@ -20,3 +24,12 @@ app.listen(8081, function () {
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 })
+
+let textapi = {
+    application_key: process.env.API_Key
+}
+
+app.get('/key',function (req,res) {
+    res.send(textapi.application_key)
+})
+

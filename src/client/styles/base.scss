@@ -1,15 +1,40 @@
 body {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     min-height: 100vh;
+    color: white;
+    background-color: rgb(56, 55, 55);
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     flex: 2;
+    // border: solid 1px red;
 }
 
 section {
-    max-width: 800px;
+    // max-width: 800px;
     margin: 50px auto;
+    // border: solid 1px red !important;
+
+    input[type="submit"] {
+        background-color: aquamarine;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: yellowgreen;
+        }
+    }
+}
+
+section:nth-child(2) {
+    width: 100%;
+    padding: 2% 5%;
+    text-align: left;
 }
 
